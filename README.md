@@ -47,7 +47,7 @@ The data was collected from Kaggle in the CSV format. The initial features descr
 - All observations on which unit_price <= 0 were removed, as we're assuming those are gifts when unit_price = 0, and when unit_price < 0 it's described as "Adjust bad debt".  
 - Some stock_code identifications weren't actual products, therefore they were removed.  
 - Both description and country columns were removed, since those aren't relevant when modelling.  
-- <p align="justify">Customer number 16446 was removed because he (she) bought 80995 items and returned them in the same day, leading to extraordinary values in other features. Other 12 customers were removed because they returned all items bought. In addition to that, three other users were also removed because they were considered to be data inconsistencies, since they had their return values greater than quantity of items bought, which doesn't make sense. These 16 were named "bad users".<p>
+- <p align="justify">Customer number 16446 was removed because he (she) bought 80995 items and returned them in the same day, leading to extraordinary values in other features. Other 12 customers were removed because they returned all items bought. In addition to that, three other users were also removed because they were considered to be data inconsistencies, since they had their return values greater than quantity of items bought, which doesn't make sense. These 16 were named "bad users".</p>
 
 # 4. **Solution Plan**
 ## 4.1. How was the problem solved?
@@ -60,7 +60,7 @@ The data was collected from Kaggle in the CSV format. The initial features descr
 
 - <b> Data Cleaning</b>: Checking data types, treating Nan's, renaming columns, dealing with outliers and filtering data.
 
-- <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. More information in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#5-feature-engineering">Section 5</a>.</p>
+- <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. More information in <a href="5-feature-engineering">Section 5</a>.</p>
 
 - <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. Two EDA profile reports are available for download <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering/tree/main/pandas-profiling-reports"> here</a>, one still with the bad users and one without them. 
 
@@ -70,13 +70,13 @@ The data was collected from Kaggle in the CSV format. The initial features descr
 
 - <b> Space Analysis and Dimensionality Reduction</b>: <a href="https://builtin.com/data-science/step-step-explanation-principal-component-analysis">PCA</a>, <a href="https://umap-learn.readthedocs.io/en/latest/">UMAP</a> and <a href="https://gdmarmerola.github.io/forest-embeddings/">Tree-Based Embedding</a> were used to get a better data separation. 
 
-- <p align="justify"> <b> Machine Learning Modeling</b>: Selecting the number of clusters (K) and then training Clustering Algorithms. More information in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#6-machine-learning-modeling">Section 6</a>.</p>
+- <p align="justify"> <b> Machine Learning Modeling</b>: Selecting the number of clusters (K) and then training Clustering Algorithms. More information in <a href="#6-machine-learning-modeling">Section 6</a>.</p>
 
 - <b> Model Evaluation</b>: Evaluating the model by using Silhouette Score and Silhouette Visualization.
 
-- <b>Cluster Exploratory Data Analysis</b>: Exploring the clusters to obtain business experience and to find useful business insights. In addition to that, this step also helped building the business report. The top business insights found are available in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#7-top-business-insights"> Section 7</a>. 
+- <b>Cluster Exploratory Data Analysis</b>: Exploring the clusters to obtain business experience and to find useful business insights. In addition to that, this step also helped building the business report. The top business insights found are available in <a href="#7-top-business-insights"> Section 7</a>. 
 
-- <p align="justify"> <b>Final Report and Deployment</b>: Providing a business report regarding the clusters, as well as a list of customers that will participate in Insiders. This report was built using <a href="https://powerbi.microsoft.com/pt-br/">Power BI</a>, as well as <a href="https://render.com/">Render Cloud</a> and <a href="https://www.google.com/intl/pt-BR/drive/">Google Drive</a>, so that it could be accessed from anywhere. More information in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#8-final-report-and-deployment"> Section 8</a>.</p>
+- <p align="justify"> <b>Final Report and Deployment</b>: Providing a business report regarding the clusters, as well as a list of customers that will participate in Insiders. This report was built using <a href="https://powerbi.microsoft.com/pt-br/">Power BI</a>, as well as <a href="https://render.com/">Render Cloud</a> and <a href="https://www.google.com/intl/pt-BR/drive/">Google Drive</a>, so that it could be accessed from anywhere. More information in <a href="#8-final-report-and-deployment"> Section 8</a>.</p>
 
 ## 4.2. Tools and techniques used:
 - [Python 3.10.8](https://www.python.org/downloads/release/python-3108/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/), [Sklearn](https://scikit-learn.org/stable/), [SciPy](https://scipy.org/) and [Pandas Profiling](https://pypi.org/project/pandas-profiling/).
