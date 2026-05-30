@@ -8,7 +8,7 @@
 
 *Obs: The company and business problem are both fictitious, although the data is real.*
 
-*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-outleto-clustering/blob/main/notebooks/outleto.ipynb) Jupyter Notebook.*
+*The in-depth Python code explanation is available in [this](https://github.com/NitinTiwari1305/-project-outleto-clustering/blob/main/notebooks/outleto.ipynb) Jupyter Notebook.*
 
 # 1. **Outleto and Business Problem**
 <p align="justify"> Outleto is a multibrand outlet company, meaning it sells second line products of various companies at lower prices, through an E-commerce platform. Outleto's Marketing Team noticed that some customers tend to buy more expensive products, in higher quantities and more frequently than others, therefore contributing to a higher share of Outleto's total gross revenue. Because of that, the Marketing Team wishes to launch a customer loyalty program, dividing the 5,702 customers in clusters, on which the best customers will be placed in a cluster named Insiders. </p>
@@ -60,9 +60,9 @@ The data was collected from Kaggle in the CSV format. The initial features descr
 
 - <b> Data Cleaning</b>: Checking data types, treating Nan's, renaming columns, dealing with outliers and filtering data.
 
-- <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. More information in <a href="https://github.com/brunodifranco/project-outleto-clustering#5-feature-engineering">Section 5</a>.</p>
+- <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. More information in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#5-feature-engineering">Section 5</a>.</p>
 
-- <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. Two EDA profile reports are available for download <a href="https://github.com/brunodifranco/project-outleto-clustering/tree/main/pandas-profiling-reports"> here</a>, one still with the bad users and one without them. 
+- <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. Two EDA profile reports are available for download <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering/tree/main/pandas-profiling-reports"> here</a>, one still with the bad users and one without them. 
 
 - <b> Data Preparation</b>: Applying <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/">Rescaling Techniques</a> in the data.
 
@@ -70,13 +70,13 @@ The data was collected from Kaggle in the CSV format. The initial features descr
 
 - <b> Space Analysis and Dimensionality Reduction</b>: <a href="https://builtin.com/data-science/step-step-explanation-principal-component-analysis">PCA</a>, <a href="https://umap-learn.readthedocs.io/en/latest/">UMAP</a> and <a href="https://gdmarmerola.github.io/forest-embeddings/">Tree-Based Embedding</a> were used to get a better data separation. 
 
-- <p align="justify"> <b> Machine Learning Modeling</b>: Selecting the number of clusters (K) and then training Clustering Algorithms. More information in <a href="https://github.com/brunodifranco/project-outleto-clustering#6-machine-learning-modeling">Section 6</a>.</p>
+- <p align="justify"> <b> Machine Learning Modeling</b>: Selecting the number of clusters (K) and then training Clustering Algorithms. More information in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#6-machine-learning-modeling">Section 6</a>.</p>
 
 - <b> Model Evaluation</b>: Evaluating the model by using Silhouette Score and Silhouette Visualization.
 
-- <b>Cluster Exploratory Data Analysis</b>: Exploring the clusters to obtain business experience and to find useful business insights. In addition to that, this step also helped building the business report. The top business insights found are available in <a href="https://github.com/brunodifranco/project-outleto-clustering#7-top-business-insights"> Section 7</a>. 
+- <b>Cluster Exploratory Data Analysis</b>: Exploring the clusters to obtain business experience and to find useful business insights. In addition to that, this step also helped building the business report. The top business insights found are available in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#7-top-business-insights"> Section 7</a>. 
 
-- <p align="justify"> <b>Final Report and Deployment</b>: Providing a business report regarding the clusters, as well as a list of customers that will participate in Insiders. This report was built using <a href="https://powerbi.microsoft.com/pt-br/">Power BI</a>, as well as <a href="https://render.com/">Render Cloud</a> and <a href="https://www.google.com/intl/pt-BR/drive/">Google Drive</a>, so that it could be accessed from anywhere. More information in <a href="https://github.com/brunodifranco/project-outleto-clustering#8-final-report-and-deployment"> Section 8</a>.</p>
+- <p align="justify"> <b>Final Report and Deployment</b>: Providing a business report regarding the clusters, as well as a list of customers that will participate in Insiders. This report was built using <a href="https://powerbi.microsoft.com/pt-br/">Power BI</a>, as well as <a href="https://render.com/">Render Cloud</a> and <a href="https://www.google.com/intl/pt-BR/drive/">Google Drive</a>, so that it could be accessed from anywhere. More information in <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering#8-final-report-and-deployment"> Section 8</a>.</p>
 
 ## 4.2. Tools and techniques used:
 - [Python 3.10.8](https://www.python.org/downloads/release/python-3108/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/), [Sklearn](https://scikit-learn.org/stable/), [SciPy](https://scipy.org/) and [Pandas Profiling](https://pypi.org/project/pandas-profiling/).
@@ -172,9 +172,9 @@ There're two properties we look for when creating clusters:
 |        [![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=Power%20BI&logoColor=white)](https://drive.google.com/file/d/1Ys3bbyh2evWvzbG5mXlM6MrH-z6neXmb/view)
 </div>
  
-<p align="justify"> <b> Whereas for the list of customers that made it to insiders it was saved in CSV format, and it's available <a href="https://github.com/brunodifranco/project-outleto-clustering/blob/main/lists/insiders_list.csv">here</a> </b>. </p>
+<p align="justify"> <b> Whereas for the list of customers that made it to insiders it was saved in CSV format, and it's available <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering/blob/main/lists/insiders_list.csv">here</a> </b>. </p>
    
-<i> The complete list of Outleto's customers is also available for download <a href="https://github.com/brunodifranco/project-outleto-clustering/blob/main/lists/full_list.csv">here</a> </i>. 
+<i> The complete list of Outleto's customers is also available for download <a href="https://github.com/NitinTiwari1305/-project-outleto-clustering/blob/main/lists/full_list.csv">here</a> </i>. 
  
 # 9. **Conclusion**
 In this project the main objective was accomplished:
@@ -192,5 +192,5 @@ In this project the main objective was accomplished:
 
 # Contact
 
-- brunodifranco99@gmail.com
-- [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/BrunoDiFrancoAlbuquerque/)
+- nitintiwari1305@gmail.com
+- [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nitintiwari1305/)
